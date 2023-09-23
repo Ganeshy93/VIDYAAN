@@ -1,0 +1,76 @@
+/* Reset some default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Style the img element for the background image */
+/* Style the img element for the background image */
+.background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    z-index: -1; /* Place the image behind other content */
+}
+
+/* Rest of your CSS styles for text and elements can remain the same */
+
+
+/* Rest of your CSS styles for text and elements can remain the same */
+
+/* Apply the background image to the body */
+
+
+/* Rest of your CSS styles for text and elements can remain the same */
+
+/* Add this rule to increase the font size for the entire page */
+body {
+    font-size: 18px; /* You can adjust the size as needed */
+}
+/* Apply the styling to all elements with the max-text class */
+
+/* The existing styles for your links can remain the same */
+
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+li {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #0078d4;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #004b8e;
+}

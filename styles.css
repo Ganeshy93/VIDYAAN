@@ -1,0 +1,248 @@
+/* Common styles for both pages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('http://cdn.wallpapersafari.com/13/6/Mpsg2b.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the login page */
+.login {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.login-header {
+  color: #fff;
+  text-align: left;
+  font-size: 2em;
+  padding: 20px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.login-header h1 {
+  margin-left: 40px;
+}
+
+.login-form {
+  border: 1px solid #fff;
+  background: #4facff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+.login-form h3 {
+  text-align: left;
+  margin-left: 40px;
+  color: #fff;
+}
+
+.login-form {
+  box-sizing: border-box;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  max-width: 400px;
+  width: 80%;
+  line-height: 2.5em;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0.5em auto;
+  border-radius: 5px;
+  border: 2px solid #f2f2f2;
+  outline: none;
+  padding: 0 10px;
+}
+
+.login-form input[type="button"] {
+  height: 30px;
+  width: 100px;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  color: slategrey;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+
+.sign-up {
+  color: #f2f2f2;
+  margin-left: -70%;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.no-access {
+  color: #E86850;
+  margin: 20px 0 20px -57%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Additional styles for the registration page */
+.jumbotron {
+  background-color: #f8f9fa !important;
+  padding: 20px;
+  border: 1px solid #343a40;
+  margin-bottom: 20px;
+}
+
+.jumbotron h1, .jumbotron h2 {
+  color: #343a40;
+}
+
+.jumbotron p {
+  color: #343a40;
+}
+
+.jumbotron hr {
+  border-color: #343a40;
+}
+
+.jumbotron {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-side {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  background-color: #343a40;
+}
+
+.navbar-side h6 {
+  color: #fff;
+  margin: 9px 0 10px 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.navbar-side ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-side ul li a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.1em;
+  width: 100%;
+  padding-left: 20px;
+  transition: 0.2s all ease-in-out;
+  white-space: nowrap;
+}
+
+.navbar-side ul li a:hover,
+.navbar-side ul li a.link-active {
+  background-color: #212121;
+  border-left: 5px solid #ccc;
+}
+
+.content {
+  margin-left: 200px;
+}
+
+.content #navBtn {
+  font-size: 20px;
+}
+
+.main.animate .navbar-side {
+  width: 70px;
+}
+
+.main.animate .navbar-side .link-text {
+  display: none;
+}
+
+.main.animate .navbar-side .myCaret {
+  display: none;
+}
+
+.main.animate .content {
+  margin-left: 60px;
+}
+
+.myBtn[aria-expanded="false"] .myCaret:before,
+.myBtn[aria-expanded="true"] .myCaret:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "f107";
+  float: right;
+  transition: all 0.5s;
+}
+
+.myBtn[aria-expanded="true"] .myCaret:before {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 991px) {
+  .main .navbar-side {
+    width: 40px;
+    font-size: 0.8em;
+  }
+
+  .main .navbar-side .link-text {
+    display: none;
+  }
+
+  .main .navbar-side .myCaret {
+    display: none;
+  }
+
+  .main .navbar-side h6 {
+    margin: 9px 0 10px 9px;
+    font-size: 1.2em;
+    line-height: 1.9;
+  }
+
+  .main .navbar-side ul li a {
+    padding-left: 10px;
+  }
+
+  .main .navbar-side ul li a:hover,
+  .main .navbar-side ul li a.link-active {
+    border-left: 2px solid #ccc;
+  }
+
+  .main .content {
+    margin-left: 40px;
+  }
+
+  .main.animate .navbar-side {
+    width: 150px;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .main.animate .navbar-side .link-text {
+    display: inline-block;
+  }
+
+  .main.animate .navbar-side .caret {
+    display: block;
+  }
+
+  .myCaret {
+    display: none;
+  }
+}
